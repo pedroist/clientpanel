@@ -33,7 +33,6 @@ export class AddClientComponent implements OnInit {
     if (this.disableBalanceOnAdd) {
       value.balance = 0;
     }
-    debugger;
     if (!valid) {
       // show Error
       this.flashMessage.show("Please fill out the form correctly", {
