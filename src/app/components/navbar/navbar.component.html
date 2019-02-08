@@ -6,7 +6,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+          <li *ngIf="loggedInUser" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
             <a routerLink="/" class="nav-link">Dashboard</a>
           </li>
         </ul>
